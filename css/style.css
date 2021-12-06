@@ -418,10 +418,10 @@
 .footer-wrap>.bottom-bar-wrap>.bottom-bar{
   height:77px;
 }
-.footer-wrap>.bottom-bar>ul>li{ 
+.footer-wrap>.bottom-bar-wrap>.bottom-bar>ul>li{ 
   text-align:center;
 }
-.footer-wrap>.bottom-bar>ul>.policy a{
+.footer-wrap>.bottom-bar-wrap>.bottom-bar>ul>.policy a{
   color:#ff7c98;
 }
 .footer-wrap>.brand-family-wrap{
