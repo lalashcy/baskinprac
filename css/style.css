@@ -289,7 +289,7 @@
   left:130px;
 }
 .br-menu-wrap>.menu-list>.beverage>a>.txt>h4{
-  color:#ff7c98;
+  color:#F49DD5;
 }
 .br-menu-wrap>.menu-list>.coffee{
   width:329px;
@@ -319,7 +319,7 @@
   right:180px;
 }
 .br-menu-wrap>.menu-list>.gift>a>.txt>h4{
-  color:#F33496;
+  color:#F49DD5;
 }
 /* br-menu-wrap 끝 */
 /* br-store_delivery 시작 */
@@ -409,9 +409,12 @@
 .footer-wrap{
   height:390px;
 }
-.footer-wrap>.bottom-bar{
+.footer-wrap>.bottom-bar-wrap{
   height:77px;
-  border-top:3px solid orange;
+  border-top:1px solid orange;
+}
+.footer-wrap>.bottom-bar-wrap>.bottom-bar{
+  height:77px;
 }
 .footer-wrap>.bottom-bar>ul>li{ 
   text-align:center;
@@ -420,39 +423,43 @@
 .footer-wrap>.bottom-bar>ul>.policy a{
   color:#ff7c98;
 }
-.footer-wrap>.brand-family{
+.footer-wrap>.brand-family-wrap{
   height:75px;
   position:relative;
+  background-color:#f9f8f7;
 }
-.footer-wrap>.brand-family>.brand{
+.footer-wrap>.brand-family-wrap>.brand-family{
+  height:75px;
+}
+.footer-wrap>.brand-family-wrap>.brand-family>.brand{
   height:54px;
 }
-.footer-wrap>.brand-family>.brand>ul{
+.footer-wrap>.brand-family-wrap>.brand-family>.brand>ul{
   padding:22px 0 0 220px;
 }
-.footer-wrap>.brand-family>.brand>ul>.li-1{
+.footer-wrap>.brand-family-wrap>.brand-family>.brand>ul>.li-1{
   width:111px;
 }
-.footer-wrap>.brand-family>.brand>ul>.li-2{
+.footer-wrap>.brand-family-wrap>.brand-family>.brand>ul>.li-2{
   width:115px;
 }
-.footer-wrap>.brand-family>.brand>ul>.li-3{
+.footer-wrap>.brand-family-wrap>.brand-family>.brand>ul>.li-3{
   width:170px;
 }
-.footer-wrap>.brand-family>.brand>ul>.li-4{
+.footer-wrap>.brand-family-wrap>.brand-family>.brand>ul>.li-4{
   width:60px;
 }
-.footer-wrap>.brand-family>.brand>ul>.li-5{
+.footer-wrap>.brand-family-wrap>.brand-family>.brand>ul>.li-5{
   width:60px;
 }
-.footer-wrap>.brand-family>.family-site{
+.footer-wrap>.brand-family-wrap>.brand-family>.family-site{
   width:150px;
   position:absolute;
   top:20px;
   right:195px;
   background-color:white;
 }
-.footer-wrap>.brand-family>.family-site>button{
+.footer-wrap>.brand-family-wrap>.brand-family>.family-site>button{
   width:100%;
   height:32px;
   border-radius:5px;
@@ -466,6 +473,7 @@
   width:128px;
   height:60px;
   margin:0 auto;
+  margin-top:20px;
 }
 .footer-wrap>.footer>.foot{
   height:40px;
