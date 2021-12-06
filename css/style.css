@@ -1,0 +1,480 @@
+/* 노멀라이징 */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  ul , li {
+    list-style: none ;
+  }
+  a{
+    color: inherit ;
+    text-decoration: none ;
+  }
+  /* 라이브러리 */
+  .cell{
+    float: left ;
+  }
+  .cell-r{
+    float: right ;
+  }
+  .row::after{
+    clear: both;
+    content: "";
+    display: block;
+  }
+  .con{
+    max-width: 1200px ;
+    margin: 0 auto ;
+  } 
+  /* 스타일 */
+  /* headder-wrap 시작 */
+.header-wrap{
+  width:100%;
+  height:185px;
+  border-top:3px solid pink;
+  border-bottom:1px solid brown;   
+  background:url(http://www.baskinrobbins.co.kr/assets/images/common/bg_header.gif);
+}
+.header-wrap>.header>.top-head{
+  height:140px;
+  position:relative;
+}
+.header-wrap>.header>.top-head>.sns-icon{
+  width:225px;
+  height:35px;
+  position:absolute;
+  top:50%;
+  left:0;
+  transform:translate(0,-50%);
+}
+.header-wrap>.header>.top-head>.sns-icon>ul>li{
+  width:20%;
+  height:35px;
+}
+.header-wrap>.header>.top-head>.logo{
+  width:92px;
+  height:92px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.header-wrap>.header>.top-head>.ect{
+  width:210px;
+  height:54px;
+  position:absolute;
+  top:50%;
+  right:50px;
+  transform:translate(0,-50%);
+}
+.header-wrap>.header>.top-head>.ect>span{
+  line-height:54px;
+  margin-right:20px;
+}
+.header-wrap>.header>.top-head>.search{
+  width:54px;
+  height:54px;
+  position:absolute;
+  top:50%;
+  right:0;
+  transform:translate(0,-50%);
+}
+.header-wrap>.header>.top-head>.search>img{
+  width:100%;
+}
+.top-bar-wrap{
+  width:100%;
+  height:45px;
+  background-color:white;
+  border-top:1px solid #e2d9d6;
+}
+.top-bar{
+  height:45px;
+}
+.top-bar-wrap>.top-bar>.membership{
+  width:130px;
+  height:45px;
+}
+.top-bar-wrap>.top-bar>.membership>ul>li{
+  line-height:45px;
+  padding-left:10px;
+  padding-right:10px;
+}
+.top-bar-wrap>.top-bar>.membership>ul>.ft{
+  color:#ff7c98;
+}
+.top-bar-wrap>.top-bar>.menu{
+  height:45px;
+}
+.top-bar-wrap>.top-bar>.menu>ul>li{
+  line-height:45px;
+  margin-left:65px;
+  margin-right:30px;
+}
+.nav-wrap{
+  width:100%;
+  height:300px;
+  background-color:white;
+  position:absolute;
+  z-index:999;
+  transition:0.5s;
+  max-height:0;
+  overflow:hidden;
+  border-top:1px solid black;
+}
+.nav-wrap:hover,
+.nav-wrap.active{
+  max-height:300px;
+}
+.nav-wrap>.nav{
+  height:100%;
+  position:relative;
+}
+.nav-wrap>.nav>.img1{
+  width:170px;
+  height:130px;
+  position:absolute;
+  top:50%;
+  transform:translate(0,-50%);
+}
+.nav-wrap>.nav>.img1>img{
+  width:100%;
+}
+.nav-wrap>.nav>.img2{ 
+  position:absolute;
+  left:160px;
+}
+.nav-wrap>.nav>.nav-depth{
+  width:810px;
+  height:100%;
+}
+.nav-wrap>.nav>.nav-depth>.box{
+  width:20%;
+  height:100%;
+}
+.nav-wrap>.nav>.nav-depth>.box>p{
+  font-size:13px;
+  margin-top:20px;
+  text-align:center;
+}
+/* headder-wrap 끝 */
+/* slider-wrap 시작 */
+.slider-wrap{
+  position:relative;
+}
+.slider-wrap>.top{
+  width:100%;
+  height:150px;
+  background-image:url(http://www.baskinrobbins.co.kr/upload/main/1615480039.jpg);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.slider{
+  margin:0 auto;
+  margin-top:5px;
+}
+.slider .contnet>img{
+  width:100%;
+}
+.slider .slick-prev{
+  width:40px;
+  height:40px;
+  left:10px;
+  z-index:9;
+}
+.slider .slick-next{
+  right:10px;
+  z-index:9;
+}
+.slider .slick-prev:before,
+.slider .slick-next:before{
+  color:white;
+}
+
+.slider .slick-dots{
+  bottom:10px;
+}
+.slider .slick-dots li.slick-active button:before{
+  color:white;
+}
+.slider .slick-dots li button:before{
+  color:black;
+}
+/* slider-wrap 끝 */
+/* br-event-wrap 시작 */
+.br-event-wrap{
+  width:100%;
+  height:720px;
+}
+.br-event-wrap>.br-event>.title{
+  width:100%;
+  height:170px;
+  position:relative;
+}
+.br-event-wrap>.br-event>.title>img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.br-event-wrap>.br-event>.event-list{
+  height:485px;
+}
+.br-event-wrap>.br-event>.event-list>.content-box{
+  width:100%;
+  height:100%;
+}
+.br-event-wrap>.br-event>.event-list>.content-box>ul>li{
+  width:25%;
+}
+/* br-event-wrap 끝 */
+/* br-menu-wrap 시작 */
+.br-menu-wrap{
+  width:100%;
+  height:1157px;
+  background-image:url(http://www.baskinrobbins.co.kr/assets/images/main/bg_menu.jpg);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.br-menu-wrap>.title{
+  width:100%;
+  height:100px;
+  position:relative;
+}
+.br-menu-wrap>.title>img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.br-menu-wrap>.menu-list{
+  height:1060px;
+  position:relative;
+}
+.br-menu-wrap>.menu-list>div{
+  position:absolute;
+}
+.br-menu-wrap>.menu-list>div>a>.txt{
+  margin-top:20px;
+  margin-left:20px;
+}
+.br-menu-wrap>.menu-list>.icecream{
+  width:395px;
+  height:302px;
+  background-color:white;
+  top:50px;
+  left:320px;
+}
+.br-menu-wrap>.menu-list>.icecream>a>.txt>h4{
+  color:#ff7c98;
+}
+.br-menu-wrap>.menu-list>.icecreamcake{
+  width:276px;
+  height:472px;
+  background-color:white;
+  top:50px;
+  right:180px;
+}
+.br-menu-wrap>.menu-list>.icecreamcake>a>.txt>h4{
+  color:#F68D14;
+}
+.br-menu-wrap>.menu-list>.beverage{
+  width:230px;
+  height:366px;
+  background-color:white;
+  top:380px;
+  left:130px;
+}
+.br-menu-wrap>.menu-list>.beverage>a>.txt>h4{
+  color:#ff7c98;
+}
+.br-menu-wrap>.menu-list>.coffee{
+  width:329px;
+  height:292px;
+  background-color:white;
+  top:390px;
+  left:390px;
+}
+.br-menu-wrap>.menu-list>.coffee>a>.txt>h4{
+  color:#5A2B02;
+}
+.br-menu-wrap>.menu-list>.dessert{
+  width:329px;
+  height:177px;
+  background-color:white;
+  top:720px;
+  left:390px;
+}
+.br-menu-wrap>.menu-list>.dessert>a>.txt>h4{
+  color:#ff7c98;
+}
+.br-menu-wrap>.menu-list>.gift{
+  width:276px;
+  height:183px;
+  background-color:white;
+  top:580px;
+  right:180px;
+}
+.br-menu-wrap>.menu-list>.gift>a>.txt>h4{
+  color:#F33496;
+}
+/* br-menu-wrap 끝 */
+/* br-store_delivery 시작 */
+.store_delivery{
+  height:547px;
+}
+.store_delivery>.br-store{
+  width:50%;
+  height:100%;
+}
+.store_delivery>.br-store>.title{
+  width:100%;
+  height:168px;
+  position:relative;
+}
+.store_delivery>.br-store>.title>img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.store_delivery>.br-delivery{
+  width:50%;
+  height:100%;
+}
+.store_delivery>.br-delivery>.title{
+  width:100%;
+  height:168px;
+  position:relative;
+}
+.store_delivery>.br-delivery>.title>img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+/* br-store_delivery 끝 */
+/* sns-box 시작 */
+.sns-box{
+  height:1025px;
+}
+.sns-box>.title{
+  width:100%;
+  height:50px;
+  position:relative;
+}
+.sns-box>.title>img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.sns-box>.sns{
+  width:400px;
+  height:97px;
+  margin:0 auto;
+}
+.sns-box>.sns>ul>li{
+  padding-left:10px;
+  padding-right:8px;
+}
+.sns-box>.box-title{
+  height:50px;
+  position:relative;
+}
+.sns-box>.box-title>img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.sns-box>.sns-photo{
+  height:725px;
+}
+.sns-box>.sns-photo>.photo{
+  width:20%;
+  height:238px;
+  padding:5px;
+  box-sizing:border-box;
+}
+.sns-box>.sns-photo>.photo>.img-box>img{
+  width:100%;
+  display:block;
+}
+/* sns-box 끝 */
+/* footer-wrap 시작 */
+.footer-wrap{
+  height:390px;
+}
+.footer-wrap>.bottom-bar{
+  height:77px;
+  border-top:3px solid orange;
+}
+.footer-wrap>.bottom-bar>ul>li{ 
+  text-align:center;
+  line-height:77px;
+}
+.footer-wrap>.bottom-bar>ul>.policy a{
+  color:#ff7c98;
+}
+.footer-wrap>.brand-family{
+  height:75px;
+  position:relative;
+}
+.footer-wrap>.brand-family>.brand{
+  height:54px;
+}
+.footer-wrap>.brand-family>.brand>ul{
+  padding:22px 0 0 220px;
+}
+.footer-wrap>.brand-family>.brand>ul>.li-1{
+  width:111px;
+}
+.footer-wrap>.brand-family>.brand>ul>.li-2{
+  width:115px;
+}
+.footer-wrap>.brand-family>.brand>ul>.li-3{
+  width:170px;
+}
+.footer-wrap>.brand-family>.brand>ul>.li-4{
+  width:60px;
+}
+.footer-wrap>.brand-family>.brand>ul>.li-5{
+  width:60px;
+}
+.footer-wrap>.brand-family>.family-site{
+  width:150px;
+  position:absolute;
+  top:20px;
+  right:195px;
+  background-color:white;
+}
+.footer-wrap>.brand-family>.family-site>button{
+  width:100%;
+  height:32px;
+  border-radius:5px;
+  border:1px solid gray;
+  color:gray;
+}
+.footer-wrap>.footer{
+  height:238px;
+}
+.footer-wrap>.footer>.logo{
+  width:128px;
+  height:60px;
+  margin:0 auto;
+}
+.footer-wrap>.footer>.foot{
+  height:40px;
+  text-align:center;
+  font-size:13px;
+}
+.footer-wrap>.footer>.foot2{
+  height:20px;
+  text-align:center;
+  font-size:13px;
+}
+/* footer-wrap 끝 */
